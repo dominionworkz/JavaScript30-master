@@ -1,5 +1,5 @@
 window.addEventListener("keydown", function (e){
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);//"keyCode is deprecated"
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     if(!audio) return; //stops audio from running
     audio.currentTime = 0; //rewinds to the start
