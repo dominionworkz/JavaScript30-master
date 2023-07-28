@@ -17,11 +17,11 @@ body,html {
 }
 
 h1 {
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 10rem;
   color: #ffc600;
   text-align: center;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: black;
+  text-shadow: 1rem 1rem 1rem black;
 }
 
 .keys {
@@ -33,13 +33,13 @@ h1 {
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
+  border: .2rem solid #ffc600;
+  border-radius: 2rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .10s ease;
-  width: 10rem;
+  width: 15rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
@@ -62,4 +62,12 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+
+@media (max-width: 600px) {
+  .keys {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
